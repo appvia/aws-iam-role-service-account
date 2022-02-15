@@ -1,0 +1,23 @@
+# Default values for aws-iam-role-service-account.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+terraform:
+  # -- The version of Terraform used
+  version: 1.1.4
+  # -- The HashiCorp official Terraform module
+  module: https://github.com/terraform-aws-modules/terraform-aws-iam.git//modules/iam-eks-role
+  # -- The version of the Terraform module used to create an IAM role
+  moduleVersion: v4.11.0
+
+aws:
+  # -- The AWS region where the IAM role should be created
+  region: ""
+  # --  The AWS credentials to be used for provisioning the IAM role. See [supported credential types](http://tf.isaaguilar.com/docs/references/configuration/#credentials-v1alpha1-tf)
+  credentials: {}
+
+iam:
+    # -- Name of IAM role
+    role_name: ""
+    # -- EKS cluster and k8s ServiceAccount pairs. Each EKS cluster can have multiple k8s ServiceAccount. See [Terraform example usage](https://github.com/terraform-aws-modules/terraform-aws-iam/tree/master/modules/iam-eks-role#iam-eks-role)
+    cluster_service_accounts: {}

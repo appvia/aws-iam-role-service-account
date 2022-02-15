@@ -1,0 +1,6 @@
+apiVersion: v2
+name: aws-iam-role-service-account
+description: AWS IAM role for Service Account (IRSA) Helm chart for the [Terraform-operator](https://github.com/isaaguilar/terraform-operator).
+type: application
+version: 0.1.0
+appVersion: "4.11.0"
