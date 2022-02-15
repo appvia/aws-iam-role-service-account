@@ -1,6 +1,6 @@
 # aws-iam-role-service-account
 
-![Version: 0.1.0](https://img.shields.io/badge/Version-0.1.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 4.11.0](https://img.shields.io/badge/AppVersion-4.11.0-informational?style=flat-square)
+![Version: 0.1.0](https://img.shields.io/badge/Version-0.1.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 4.11.0](https://img.shields.io/badge/AppVersion-4.11.0-informational?style=flat-square&url=https://github.com/terraform-aws-modules/terraform-aws-iam/tree/v4.11.0/modules/iam-eks-role)
 
 AWS IAM role for Service Account (IRSA) Helm chart for the [Terraform-operator](https://github.com/isaaguilar/terraform-operator).
 
