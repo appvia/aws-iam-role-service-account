@@ -29,6 +29,17 @@ helm install [RELEASE_NAME] [CHART] \
   --set iam.cluster_service_accounts=[K8S_SERVICE_ACCOUNT]
 ```
 
+## Upgrade Chart
+```bash
+helm upgrade --install [RELEASE_NAME] [CHART] \
+  --namespace [NAMESPACE] \
+  --create-namespace \
+  --set aws.region=[AWS_REGION] \
+  --set iam.role_name=[AWS_IAM_ROLE_NAME] \
+  --set aws.credentials=[AWS_CREDENTIALS] \
+  --set iam.cluster_service_accounts=[K8S_SERVICE_ACCOUNT]
+```
+
 ## Uninstall Chart
 ```bash
 helm uninstall [RELEASE_NAME]
@@ -38,10 +49,10 @@ helm uninstall [RELEASE_NAME]
 ## Example Usage
 ```bash
 helm upgrade --install aws-iam-role-service-account . \
-  --dry-run \
+  --namespace my-ns \
   --set aws.region=eu-west-2 \
   --set iam.role_name=my-app \
-  --set aws.credentials[0].secretNameRef.key=data,aws.credentials[0].secretNameRef.name=tf-aws-secrets,aws.credentials[0].secretNameRef.namespace=my-namespace \
+  --set aws.credentials[0].secretNameRef.key=data,aws.credentials[0].secretNameRef.name=tf-aws-secrets,aws.credentials[0].secretNameRef.namespace=my-ns \
   --set iam.cluster_service_accounts.my-cluster[0]="my-ns:my-app"
 ```
 
