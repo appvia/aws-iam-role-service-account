@@ -1,6 +1,6 @@
 # aws-iam-role-service-account
 
-![Version: 0.1.0](https://img.shields.io/badge/Version-0.1.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 4.11.0](https://img.shields.io/badge/AppVersion-4.11.0-informational?style=flat-square&url=https://github.com/terraform-aws-modules/terraform-aws-iam/tree/v4.11.0/modules/iam-eks-role)
+![Version: 0.1.0](https://img.shields.io/badge/Version-0.1.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 4.11.0](https://img.shields.io/badge/AppVersion-4.11.0-informational?style=flat-square)
 
 AWS IAM role for Service Account (IRSA) Helm chart for the [Terraform-operator](https://github.com/isaaguilar/terraform-operator).
 
@@ -60,8 +60,8 @@ helm upgrade --install aws-iam-role-service-account . \
 
 | Key | Type | Default | Description |
 |-----|------|---------|-------------|
-| aws.credentials | object | `{}` | The AWS credentials to be used for provisioning the IAM role. See [supported credential types](http://tf.isaaguilar.com/docs/references/configuration/#credentials-v1alpha1-tf) [IMMUTABLE] |
-| aws.region | string | `""` | The AWS region where the IAM role should be created [IMMUTABLE] |
+| aws.credentials | object | `{}` | The AWS credentials to be used for provisioning the IAM role. See [supported credential types](http://tf.isaaguilar.com/docs/references/configuration/#credentials-v1alpha1-tf) |
+| aws.region | string | `""` | The AWS region where the IAM role should be created |
 | iam.cluster_service_accounts | object | `{}` | EKS cluster and k8s ServiceAccount pairs. Each EKS cluster can have multiple k8s ServiceAccount. See [Terraform example usage](https://github.com/terraform-aws-modules/terraform-aws-iam/tree/master/modules/iam-eks-role#iam-eks-role) [MUTABLE] |
 | iam.role_name | string | `""` | Name of IAM role [IMMUTABLE]|
 | terraform.module | string | `"https://github.com/terraform-aws-modules/terraform-aws-iam.git//modules/iam-eks-role"` | The HashiCorp official Terraform module |
