@@ -16,7 +16,7 @@ helm upgrade --install terraform-operator isaaguilar/terraform-operator \
 ```bash
 helm repo add appvia-community https://appvia-community.storage.googleapis.com
 helm repo update
-helm repo search appvia-community
+helm search repo appvia-community
 ```
 
 ## Install Chart
