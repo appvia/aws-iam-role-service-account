@@ -4,3 +4,4 @@ description: AWS IAM role for Service Account (IRSA) Helm chart for the [Terrafo
 type: application
 version: 0.1.0
 appVersion: "4.11.0"
+icon: https://raw.githubusercontent.com/appvia/terraform-providers/main/aws/IAM_Role.png
