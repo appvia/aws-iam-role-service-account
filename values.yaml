@@ -21,3 +21,7 @@ iam:
     role_name: ""
     # -- EKS cluster and k8s ServiceAccount pairs. Each EKS cluster can have multiple k8s ServiceAccount. See [Terraform example usage](https://github.com/terraform-aws-modules/terraform-aws-iam/tree/master/modules/iam-eks-role#iam-eks-role)
     cluster_service_accounts: {}
+
+kubernetes:
+    # Name of the k8s ServiceAccount to use for creating Terraform Pods
+    serviceAccount: ""
